@@ -10,14 +10,13 @@
 
 	Unless required by applicable law or agreed to in writing, software
 	distributed under the License is distributed on an "AS IS" BASIS,
-	 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	See the License for the specific language governing permissions and
 	limitations under the License.
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
 		<groupId>org.apache.maven.doxia</groupId>
@@ -25,19 +24,26 @@
 		<version>1.6</version>
 	</parent>
 
+	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.sbugat</groupId>
 	<artifactId>doxia-module-github-markdown</artifactId>
 	<packaging>jar</packaging>
+	<version>1.6</version>
+	<name>Doxia :: GitHub Markdown module</name>
+	<description>A Doxia module for GitHub flavored Markdown source documents.</description>
+	<inceptionYear>2014</inceptionYear>
+	<url>https://github.com/Sylvain-Bugat/doxia-module-github-markdown</url>
 
-	<name>Doxia :: Markdown module</name>
-	<description>
-		A Doxia module for GitHub Markdown source documents.
-	</description>
+	<properties>
+		<!-- GitHub java client version -->
+		<github.client>3.5.0.201409260305-r</github.client>
+	</properties>
 
 	<dependencies>
 		<dependency>
-			<groupId>org.apache.maven.doxia</groupId>
-			<artifactId>doxia-module-xhtml</artifactId>
+			<groupId>org.eclipse.mylyn.github</groupId>
+			<artifactId>org.eclipse.egit.github.core</artifactId>
+			<version>${github.client}</version>
 		</dependency>
 	</dependencies>
 
