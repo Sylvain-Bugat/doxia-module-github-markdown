@@ -36,7 +36,7 @@
 
 	<properties>
 		<!-- GitHub java client version -->
-		<github.client>3.5.0.201409260305-r</github.client>
+		<github.client>3.6.0.201412230720-r</github.client>
 	</properties>
 
 	<dependencies>
